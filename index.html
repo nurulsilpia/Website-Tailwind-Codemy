@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome.css">
+    <link rel="stylesheet" href="fonts/google-fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="public/css/tailwind.css">
+    <link rel="shortcut icon" href="public/images/logo.svg" type="image/x-icon">
+    <title>Codemy</title>
+</head>
+<body>
+  
+  <header id="home" class="p-6 shadow-lg fixed top-0 left-0 w-full bg-white flex items-center justify-between">
+    <div class="flex items-center">
+      <img src="public/images/logo.svg" width="50" class="ml-16">
+      <h1 class="pl-2 text-3xl">Codemy</h1>
+    </div>
+      <input type="checkbox" id="menu-bar" class="hidden">
+      <label for="menu-bar" class="fas fa-bars"></label>
+  
+      <nav class="navbar">
+          <a class="text-lg ml-8 hover:text-blue-500" href="#">Home</a>
+          <a class="text-lg ml-8 hover:text-blue-500" href="#course">Course</a>
+          <a class="text-lg ml-8 hover:text-blue-500" href="#teacher">Teacher</a>
+          <a class="text-lg ml-8 hover:text-blue-500" href="#review">Review</a>
+          <a class="text-lg ml-8 hover:text-blue-500" href="#contact">Contact</a>
+          <a class="text-lg ml-8 btn px-5 py-2 text-white rounded-3xl text-center" href="#login">Login</a>
+      </nav>
+  </header>
+  
+  <!--========== HOME ==========-->
+  <section id="home" class="home mt-32 flex items-center justify-center">
+    <div class="content">
+      <h1 class="font-semibold text-blue-600 text-4xl">Coding Academy</h1>
+      <p class="w-96 pt-2 pr-7 text-xl text-justify">
+        Learn Coding anywhere and anytime by International standard with <span class="text-blue-600">Codemy</span>.
+        Join us and be the best!
+      </p>
+      <a class="text-lg btn px-5 py-2 mt-4 text-white rounded-3xl text-center animate-bounce" href="#course">See Courses</a>
+    </div>
+    <div class="image">
+      <img src="public/images/home2.svg" width="600" alt="">
+    </div>
+  </section>
+
+  <!--========== COURSE ==========-->
+  <section id="course" class="mt-20 grid place-items-center w-screen min-h-full ">
+    <center>
+      <h1 class="text-3xl text-blue-600 font-semibold underline">Popular Courses</h1>
+      <p class="text-xl text-gray-400 pt-3">Upgrade Your Skill With Popular Courses</p>
+    </center>
+    
+    <div class="box-container flex items-center justify-center w-11/12 flex-wrap">
+
+      <div class="box h-60 w-80 px-4 py-8 rounded-lg m-8 flex items-center justify-center cursor-pointer overflow-hidden" data-aos="flip-right">
+        <img src="public/images/html5.png" alt="">
+        <P class="font-bold text-white">HTML</P>
+        <p class=" text-base text-center text-white opacity-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo </p>
+      </div>
+    
+      <div class="box h-60 w-80 px-4 py-8 rounded-lg m-8 flex items-center justify-center cursor-pointer overflow-hidden" data-aos="flip-down">
+        <img src="public/images/css3.png" alt="">
+        <P class="font-bold text-white">CSS</P>
+        <p class=" text-base text-center text-white opacity-0 hover:opacity-100 hover:translate-y-0 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo </p>
+      </div>
+    
+      <div class="box h-60 w-80 px-4 py-8 rounded-lg m-8 flex items-center justify-center cursor-pointer overflow-hidden" data-aos="flip-left">
+        <img src="public/images/js.png" alt="">
+        <P class="font-bold text-white">JAVASCRIPT</P>
+        <p class=" text-base text-center text-white opacity-0 hover:opacity-100 hover:translate-y-0 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo </p>
+      </div>
+    
+      <div class="box h-60 w-80 px-4 py-8 rounded-lg m-8 flex items-center justify-center cursor-pointer overflow-hidden" data-aos="flip-right">
+        <img src="public/images/android.png" alt="">
+        <P class="font-bold text-white">ANDROID</P>
+        <p class=" text-base text-center text-white opacity-0 hover:opacity-100 hover:translate-y-0 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo </p>
+      </div>
+    
+      <div class="box h-60 w-80 px-4 py-8 rounded-lg m-8 flex items-center justify-center cursor-pointer overflow-hidden" data-aos="flip-up">
+        <img src="public/images/sass.png" alt="">
+        <P class="font-bold text-white">SASS</P>
+        <p class=" text-base text-center text-white opacity-0 hover:opacity-100 hover:translate-y-0 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo </p>
+      </div>
+    
+      <div class="box h-60 w-80 px-4 py-8 rounded-lg m-8 flex items-center justify-center cursor-pointer overflow-hidden" data-aos="flip-right">
+        <img src="public/images/java.png" alt="">
+        <P class="font-bold text-white">JAVA</P>
+        <p class=" text-base text-center text-white opacity-0 hover:opacity-100 hover:translate-y-0 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo </p>
+      </div>
+    
+    </div>
+  </section>
+
+  <!--========== TEACHER ==========-->
+  <section id="teacher" class="teacher mt-16 pt-4 bg-gray-50">
+
+    <center>
+      <h1 class="text-3xl text-blue-600 font-semibold underline">Our Teacher</h1>
+      <p class="text-xl text-gray-400 pt-3">Learn Form Professional Teachers</p>
+    </center>
+    
+    <div class="card-container flex items-center justify-center flex-wrap py-8 px-0">
+    
+        <div class="card rounded-md p-8 m-8 bg-white text-center w-64 shadow-2xl" data-aos="flip-up">
+            <img src="public/images/teacher1.jpg" alt="" class="h-64 w-full object-cover">
+            <h3 class="text-blue-600 text-2xl py-2 px-0">Waiji</h3>
+            <p class="text-lg text-gray-500">Professional Teachers</p>
+            <div class="icons">
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-facebook-f"></a>
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-twitter"></a>
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-instagram"></a>
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-github"></a>
+            </div>
+        </div>
+    
+        <div class="card rounded-md p-8 m-8 bg-white text-center w-64 shadow-2xl" data-aos="flip-down">
+            <img src="public/images/teacher2.jpg" alt="" class="h-64 w-full object-cover">
+            <h3 class="text-blue-600 text-2xl py-2 px-0">Roseanne</h3>
+            <p class="text-lg text-gray-500">Professional Teachers</p>
+            <div class="icons">
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-facebook-f"></a>
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-twitter"></a>
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-instagram"></a>
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-github"></a>
+            </div>
+        </div>
+    
+        <div class="card rounded-md p-8 m-8 bg-white text-center w-64 shadow-2xl" data-aos="flip-up">
+            <img src="public/images/teacher3.jpg" alt="" class="h-64 w-full object-cover">
+            <h3 class="text-blue-600 text-2xl py-2 px-0">Yedam</h3>
+            <p class="text-lg text-gray-500">Professional Teachers</p>
+            <div class="icons">
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-facebook-f"></a>
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-twitter"></a>
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-instagram"></a>
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-github"></a>
+            </div>
+        </div>
+    
+        <div class="card rounded-md p-8 m-8 bg-white text-center w-64 shadow-2xl" data-aos="flip-down">
+            <img src="public/images/teacher4.jpg" alt="" class="h-64 w-full object-cover">
+            <h3 class="text-blue-600 text-2xl py-2 px-0">Wendy</h3>
+            <p class="text-lg text-gray-500">Professional Teachers</p>
+            <div class="icons">
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-facebook-f"></a>
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-twitter"></a>
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-instagram"></a>
+                <a href="#" class="text-2xl py-6 px-2 text-blue-600 hover:text-gray-500 fab fa-github"></a>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+  </section>
+
+  <!--========== REVIEW ==========-->
+  <section id="review" class="mt-20 grid place-items-center min-h-screen w-screen">
+
+    <center>
+      <h1 class="text-3xl text-blue-600 font-semibold underline">Students Review<h1>
+      <p class="text-xl text-gray-400 pt-3">What Our Students Says About Us?</p>
+    </center>
+    
+    <div class="box-container w-full">
+    
+      <div class="box rounded-lg max-w-3xl bg-gray-600 flex items-center justify-around m-8 ml-20 pl-24 relative clear-both" data-aos="flip-left">
+        <img src="public/images/student1.jpg" alt="" class="absolute top-1/2 -left-16 -translate-y-1/2 h-32 w-32 rounded-full border-solid border-8 border-blue-500 object-cover">
+        <div class="info">
+          <p class="text-base p-4 text-white text-justify pr-6"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sed rerum a, repellat nulla recusandae! Explicabo consectetur, quas laborum quod molestiae similique vel ad reprehenderit dolor debitis quos consequuntur nobis!<i class="fas fa-quote-right"></i></p>
+          <h2 class="text-lg font-bold m-4 text-white text-right px-4">--Student Name</h2>
+        </div>
+      </div>
+      
+      <div class="box rounded-lg max-w-3xl bg-gray-600 flex items-center justify-around m-8 ml-20 pl-24 relative clear-both" data-aos="flip-right">
+        <img src="public/images/student2.jpg" alt="" class="absolute top-1/2 -left-16 h-32 w-32 rounded-full border-solid border-8 border-blue-500 object-cover">
+        <div class="info">
+          <p class="text-base p-4 text-white text-justify pr-6"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sed rerum a, repellat nulla recusandae! Explicabo consectetur, quas laborum quod molestiae similique vel ad reprehenderit dolor debitis quos consequuntur nobis!<i class="fas fa-quote-right"></i></p>
+          <h2 class="text-lg font-bold m-4 text-white text-right px-4">--Student Name</h2>
+        </div>
+      </div>
+      
+      <div class="box rounded-lg max-w-3xl bg-gray-600 flex items-center justify-around m-8 ml-20 pl-24 relative clear-both" data-aos="flip-left">
+        <img src="public/images/student3.jpg" alt="" class="absolute top-1/2 -left-16 -translate-y-1/2 h-32 w-32 rounded-full border-solid border-8 border-blue-500 object-cover">
+        <div class="info">
+          <p class="text-base p-4 text-white text-justify pr-6"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sed rerum a, repellat nulla recusandae! Explicabo consectetur, quas laborum quod molestiae similique vel ad reprehenderit dolor debitis quos consequuntur nobis!<i class="fas fa-quote-right"></i></p>
+          <h2 class="text-lg font-bold m-4 text-white text-right px-4">--Student Name</h2>
+        </div>
+      </div>
+      
+      <div class="box rounded-lg max-w-3xl bg-gray-600 flex items-center justify-around m-8 ml-20 pl-24 relative clear-both" data-aos="flip-right">
+        <img src="public/images/student4.jpg" alt="" class="absolute top-1/2 -left-16 -translate-y-1/2 h-32 w-32 rounded-full border-solid border-8 border-blue-500 object-cover">
+        <div class="info">
+          <p class="text-base p-4 text-white text-justify pr-6"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sed rerum a, repellat nulla recusandae! Explicabo consectetur, quas laborum quod molestiae similique vel ad reprehenderit dolor debitis quos consequuntur nobis!<i class="fas fa-quote-right"></i></p>
+          <h2 class="text-lg font-bold m-4 text-white text-right px-4">--Student Name</h2>
+        </div>
+      </div>
+    
+    </div>
+    
+    </section>
+
+    <!--========== CONTACT ==========-->
+    <section id="contact" class="mt-16 pt-4 bg-gray-50" >
+
+      <center>
+        <h1 class="text-3xl text-blue-600 font-semibold underline">Contact Us<h1>
+        <p class="text-xl text-gray-500 pt-3">Contact Us If You Have Any Question In Your Mind</p>
+      </center>
+      <div data-aos="zoom-in">
+      <div class="contact flex items-center justify-center flex-wrap pb-16" >
+        <div class="image" >
+            <img src="public/images/contact.svg" width="600" alt="" class="p-8">
+        </div>
+    
+        <form action="" class="mt-12 max-w-lg py-8 px-12 rounded-lg bg-white justify-center" >
+    
+            <h1 class="heading  p-0 pb-8 text-xl text-gray-700">We Love Conversation. Let's Talk!</h1>
+    
+            <div class="inputBox relative">
+                <input class="w-full border-2 rounded-lg text-gray-500 my-6 mx-0 py-2 pl-2 text-lg normal-case" type="text" required>
+                <label class="absolute top-6 left-0 text-lg text-gray-600 p-2">name</label>
+            </div>
+    
+            <div class="inputBox relative">
+                <input class="w-full border-2 rounded-lg text-gray-500 my-6 mx-0 py-2 pl-2 text-lg normal-case" type="email" required>
+                <label class="absolute top-6 left-0 text-lg text-gray-600 p-2">email</label>
+            </div>
+    
+            <div class="inputBox relative">
+                <input class="w-full border-2 rounded-lg text-gray-500 my-6 mx-0 py-2 pl-2 text-lg normal-case" type="number" required>
+                <label class="absolute top-6 left-0 text-lg text-gray-600 p-2">phone</label>
+            </div>
+    
+            <div class="inputBox relative">
+                <textarea required name="" class="resize-none border-2 rounded-lg h-40 w-full text-gray-500 my-6 mx-0 py-2 pl-2 text-lg normal-case" id="" cols="30" rows="10"></textarea>
+                <label class="absolute top-6 left-0 text-lg text-gray-600 p-2">message</label>
+            </div>
+    
+            <center>
+              <input type="submit" class="btn px-6 py-2 mt-4 text-white text-center text-xl rounded-3xl justify-center" value="send message">
+            </center>
+        </form>
+      </div>
+      </div>
+  </section>
+
+  <!--========== FOOTER ==========-->
+  <footer class="text-center justify-center border-t-2 mb-2">
+    <div class="icons mt-2">
+      <a href="#" class=" text-2xl p-2 text-blue-600 hover:text-gray-500 fab fa-github"></a>
+      <a href="#" class=" text-2xl p-2 text-blue-600 hover:text-gray-500 fab fa-instagram"></a>
+      <a href="#" class=" text-2xl p-2 text-blue-600 hover:text-gray-500 fab fa-twitter"></a>
+      <a href="#" class=" text-2xl p-2 text-blue-600 hover:text-gray-500 fab fa-facebook-f"></a>
+    </div>
+    <p class="text-lg font-semibold text-gray-700">Coding Academy | &copy; 2021 Codemy</p>
+  </footer>
+
+  <!-- ------------------------------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="public/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay:500
+    });
+</script>
+</body>
+</html>

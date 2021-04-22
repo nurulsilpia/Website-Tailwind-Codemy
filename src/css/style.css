@@ -1,0 +1,187 @@
+/* ./your-css-folder/styles.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  scroll-behavior: smooth;
+}
+
+.btn{
+  display: inline-block;
+  background:linear-gradient(90deg, #93C5FD, #2563EB);
+  cursor: pointer;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  transition: all .3s linear;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+header{
+  z-index: 1000;
+}
+
+header label{
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media (max-width:768px){
+  header label{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header .navbar{
+      position: absolute;
+      top:100%; left: 0;
+      width:100%;
+      background:#fff;
+      padding:1rem 2rem;
+      border-top: .1rem solid rgba(0,0,0,.2);
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+      transform-origin: top;
+      transform: scaleY(0);
+      opacity: 0;
+      transition: .2s linear;
+  }
+
+  header .navbar a{
+      display: block;
+      margin:2rem 0;
+  }
+
+  header input:checked ~ .navbar{
+      transform: scaleY(1);
+      opacity: 1;
+  }
+
+  header input:checked ~ label::before{
+      content:'\f00d';
+  }
+
+  /* ================ */
+  .home{
+    flex-flow: column-reverse;
+  }
+
+  .home .image img{
+      width:100%;
+      margin-bottom: 1rem;
+  }
+
+  .home .content h1{
+      font-size: 3rem;
+  }
+
+  .home .content p{
+      font-size: 1rem;
+  }
+
+  /* ============ */
+  
+}
+
+/* =============== */
+
+#course .box-container .box {
+  box-shadow: 0 0 .3rem #333;
+  flex-flow: column;
+}
+
+#course .box-container .box img {
+  height: 35%;
+  width: 35%;
+  transform: translateY(5rem);
+}
+
+#course .box-container .box p {
+  transform: translateY(12rem);
+}
+
+#course .box-container .box:hover p {
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
+#course .box-container .box:hover img {
+  height: 25%;
+  width: 25%;
+  transform: translateY(-1rem);
+}
+
+#course .box-container .box:hover {
+  background: #333;
+}
+
+/* ==================== */
+
+
+#review .box-container .box img {
+  transform: translateY(-50%);
+  box-shadow: 0 0 5rem #3B82F6 inset;
+}
+
+#review .box-container .box .info p i {
+  padding: 1rem;
+  color: #3B82F6;
+}
+
+#review .box-container .box:nth-child(even) {
+  float: right;
+}
+
+/* ===================== */
+@media (max-width: 500px) {
+  #review .box-container .box {
+    padding: .5rem;
+    margin-top: 8rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #review .box-container .box img {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20%;
+    height: 10rem;
+    width: 10rem;
+  }
+  #review .box-container .box .info {
+    text-align: center;
+  }
+  #review .box-container .box .info p {
+    padding-top: 5rem;
+  }
+  #review .box-container .box .info h2 {
+    text-align: center;
+    margin: 1rem;
+  }
+  #review .box-container .box:nth-child(even) {
+    float: none;
+  }
+}
+
+/* ================= */
+
+.contact form{
+  border:.1rem solid rgba(0,0,0,.2);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.contact form .inputBox label{
+  transition: .2s linear;
+}
+
+.contact form .inputBox input:focus ~ label,
+.contact form .inputBox input:valid ~ label,
+.contact form .inputBox textarea:focus ~ label,
+.contact form .inputBox textarea:valid ~ label{
+  top:-1rem;
+  font-size: 1.5rem;
+  color:#2563EB;
+}
